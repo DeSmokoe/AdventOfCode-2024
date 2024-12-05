@@ -88,19 +88,19 @@ def search_X_MAS(filename):
         # A is not on the edge
         if 0 < x < len(data[y]) - 1 and 0 < y < len(data[y]) - 1:
 
-            # Look for M  left above A | S right below A
+            # Look for M  left above A and S right below A
             if data[x - 1][y - 1] == "M" and data[x + 1][y + 1] == "S":
                 individual_count += 1
 
-            # Look for M  right above A | S left below A
+            # Look for M  right above A and S left below A
             if data[x - 1][y + 1] == "M" and data[x + 1][y - 1] == "S":
                 individual_count += 1
 
-            # Look for M left below A | S right above A
+            # Look for M left below A and S right above A
             if data[x + 1][y - 1] == "M" and data[x - 1][y + 1] == "S":
                 individual_count += 1
 
-            # Look for M right below A | S left above A
+            # Look for M right below A and S left above A
             if data[x + 1][y + 1] == "M" and data[x - 1][y - 1] == "S":
                 individual_count += 1
 
