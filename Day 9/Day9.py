@@ -9,9 +9,6 @@ def dataprep(filename):
     return data
 
 
-# print(dataprep("Puzzle.txt"))
-
-
 def create_expanded_disk(filename):
     data = dataprep(filename)
     ID_number = 0
